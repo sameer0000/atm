@@ -1,6 +1,3 @@
-def multiply_list(items):
-	tot = items[0]
-	for x in items:
-		tot *= x
-	return tot
-print(multiply_list([1,2,-8]))
+import numpy as np
+>>> x=np.random.normal(size=5)
+>>> print(x)
