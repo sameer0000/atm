@@ -1,0 +1,74 @@
+ Types of Shell
+
+There are two main shells in Linux:
+
+1. The Bourne Shell: The prompt for this shell is $ and its derivatives are listed below:
+
+    POSIX shell also is known as sh
+    Korn Shell also knew as sh
+    Bourne Again SHell also knew as bash (most popular)
+
+2. The C shell: The prompt for this shell is %, and its subcategories are:
+
+    C shell also is known as csh
+    Tops C shell also is known as tcsh
+
+We will discuss bash shell based shell scripting in this tutorial.
+What is Shell Scripting?
+
+Shell scripting is writing a series of command for the shell to execute. It can combine lengthy and repetitive sequences of commands into a single and simple script, which can be stored and executed anytime. This reduces the effort required by the end user.
+
+Let us understand the steps in creating a Shell Script
+
+    Create a file using a vi editor(or any other editor).  Name  script file with extension .sh
+    Start the script with #! /bin/sh
+    Write some code.
+    Save the script file as filename.sh
+    For executing the script type bash filename.sh
+
+"#!" is an operator called shebang which directs the script to the interpreter location. So, if we use"#! /bin/sh" the script gets directed to the bourne-shell.
+
+Let's create a small script -
+
+#!/bin/sh
+ls
+
+Let's see the steps to create it -
+
+Introduction to Shell Scripting
+
+Command 'ls' is executed when we execute the scrip sample.sh file.
+Adding shell comments
+
+Commenting is important in any program. In Shell programming, the syntax to add a comment is
+
+#comment
+
+Let understand this with an example.
+
+Introduction to Shell Scripting
+What are Shell Variables?
+
+As discussed earlier, Variables store data in the form of characters and numbers. Similarly, Shell variables are used to store information and they can by the shell only.
+
+For example, the following creates a shell variable and then prints it:
+
+variable ="Hello"
+echo $variable
+
+Below is a small script which will use a variable.
+
+#!/bin/sh
+echo "what is your name?"
+read name
+echo "How do you do, $name?"
+read remark
+echo "I am $remark too!"
+
+Let's understand,  the steps to create and execute the script
+
+Introduction to Shell Scripting
+
+As you see, the program picked the value of the variable 'name' as Joy and 'remark' as excellent.
+
+This is a simple script. You can develop advanced scripts which contain conditional statements, loops, and functions. Shell scripting will make your life easy and Linux administration a breeze.  
