@@ -1,37 +1,46 @@
-atmpin=2000
-bal=50000
-pin=input("enter a pin")
-if atmpin == 2000:
-	print('select 1 for eng\n')
-	print('select 2 for withdrawl\n')
-	print('select 3 for deposit\n')
-	print('select 4 for exit\n')
-	x=input('')
-	if x==1:
-		print('Your balance')
-		print(bal)
-	elif x==2:
-		print('enter the amount you want to withdrawl')
-		y=input('')
-		if y>bal:
-			print('wrong input')
-		else:
-			bal=bal-y
-			print('your balance is')
-			print(bal)
-	elif x==3:
-		print('enter the amount you want to deposit')
-		y=input('')
-		if y<0:
-			print('wrong input')
-		else:
-			bal=bal+y
-			print('your balance is')
-			print(bal)
-	elif x==4:
-		print('')
-	else:
-		print('wrong input')
+atmpin=4444
+bal=5000
+name=input("\nEnter Your name : ")
+print("Hello ",name," !")
+pin=int(input("Enter your pin : "))
+if atmpin == pin :
+	print('Login Successful! \n\n\t  **** welcome **** \n')
+	while 1:
+			print('\t----------------------')
+			print('\t|       MENU         |')
+			print('\t----------------------')
+			print('\t|     1) ENQUIRY     |')
+			print('\t----------------------')
+			print('\t|     2) WITHDRAWAL  |')
+			print('\t----------------------')
+			print('\t|     3) DEPOSIT     |')
+			print('\t----------------------')
+			print('\t|     4) EXIT        |')
+			print('\t----------------------')
+			x=int(input(''))
+			if x==1:
+				print('Your Current Balance is :',bal,'\n\n')
+			elif x==2:
+				print('Enter the amount you want to withdraw :')
+				y=int(input(''))
+				if y>bal:
+							print("Sorry, Insufficient Funds !")
+				else:
+						bal=bal-y
+						print('Your Current Balance is : ',bal,'\n\n')
+			elif x==3:
+					print('Enter the amount you want to deposit :')
+					y=int(input(''))
+					bal=bal+y;	
+					print('Your Current Balance is : ',bal,'\n\n')		
+			elif x==4:
+					print('Thanks for visiting....!\n\n')
+					break
+			else:
+					print("Oops..! Wrong Input \n\n")
+					break
 else:
-	print('wrongpin try later')
+	print("Oops..! Wrong Pin \n\n")
+
+
 
